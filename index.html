@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Job Listings</title>
   </head>
-  <body class="min-h-dvh bg-background font-league-spartan">
+  <body class="min-h-dvh bg-background font-league-spartan flex flex-col">
     <header
       class="w-full bg-[url(/images/bg-header-mobile.svg)] md:bg-[url(/images/bg-header-desktop.svg)] h-40 bg-no-repeat bg-cover bg-primary"
     ></header>
@@ -28,94 +28,25 @@
       <div class="max-w-6xl w-full mx-auto">
         <div
           id="search-bar"
-          class="hidden gap-4 items-center border rounded-xl p-4 md:px-8 bg-white -mt-10 shadow-xl"
+          class="hidden gap-4 items-center rounded-xl p-4 md:px-8 bg-white -mt-10 shadow-xl"
         >
           <div
             id="filters-container"
-            class="grow h-full border rounded-xl p-4 md:px-8"
+            class="grow h-full p-4 flex items-center gap-4 flex-wrap"
           ></div>
           <button
             id="clearBtn"
-            class="cursor-pointer text-darkCyan font-bold hover:text-pretty hover:underline hover:underline-offset-2"
+            class="cursor-pointer text-darkCyan font-bold hover:text-pretty hover:underline hover:underline-offset-2 md:text-xl"
           >
             Clear
           </button>
         </div>
 
-        <div id="jobs-container" class="mt-12 grid gap-4">
-          <div
-            class="bg-white p-4 rounded-xl shadow-xl md:p-8 flex flex-col md:flex-row gap-4 md:gap-10 md:justify-between md:items-center"
-          >
-            <div
-              class="flex flex-col md:flex-row gap-2 md:gap-4 md:items-center w-full"
-            >
-              <img
-                src="./images/photosnap.svg"
-                alt="photosnap"
-                class="w-16 h-16 -mt-10 md:m-0"
-              />
-              <div class="grid gap-2">
-                <div class="flex items-center gap-2">
-                  <h2 class="text-primary font-bold text-xl">Photosnap</h2>
-                  <span
-                    class="ml-2 bg-primary rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase"
-                    >New!</span
-                  >
-                  <span
-                    class="bg-headings rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase"
-                    >Featured</span
-                  >
-                </div>
-                <h3 class="text-headings font-bold text-xl md:text-2xl">
-                  Senior Frontend Developer
-                </h3>
-                <div
-                  class="flex items-center gap-4 text-darkCyan font-medium md:font-bold"
-                >
-                  <p>1d ago</p>
-                  <span aria-hidden="true">•</span>
-                  <p>Fulltime</p>
-                  <span aria-hidden="true">•</span>
-                  <p>USA only</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="border-t border-t-darkCyan pt-4 md:border-0 md:pt-0 flex items-center gap-4 w-full flex-wrap md:justify-end"
-            >
-              <button
-                class="text-primary bg-filter-bg font-bold p-2 transition-colors duration-300 rounded-lg w-fit cursor-pointer hover:bg-primary hover:text-filter-bg md:text-xl"
-              >
-                Frontend
-              </button>
-              <button
-                class="text-primary bg-filter-bg font-bold p-2 transition-colors duration-300 rounded-lg w-fit cursor-pointer hover:bg-primary hover:text-filter-bg md:text-xl"
-              >
-                Senior
-              </button>
-              <button
-                class="text-primary bg-filter-bg font-bold p-2 transition-colors duration-300 rounded-lg w-fit cursor-pointer hover:bg-primary hover:text-filter-bg md:text-xl"
-              >
-                HTML
-              </button>
-              <button
-                class="text-primary bg-filter-bg font-bold p-2 transition-colors duration-300 rounded-lg w-fit cursor-pointer hover:bg-primary hover:text-filter-bg md:text-xl"
-              >
-                CSS
-              </button>
-              <button
-                class="text-primary bg-filter-bg font-bold p-2 transition-colors duration-300 rounded-lg w-fit cursor-pointer hover:bg-primary hover:text-filter-bg md:text-xl"
-              >
-                JavaScript
-              </button>
-            </div>
-          </div>
-        </div>
+        <div id="jobs-container" class="mt-12 grid gap-12"></div>
       </div>
     </main>
 
-    <footer class="mt-4 py-2 px-4">
+    <footer class="mt-auto py-2 px-4">
       <p class="max-w-6xl w-full mx-auto text-center">
         Challenge by
         <a

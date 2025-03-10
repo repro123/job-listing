@@ -11,3 +11,17 @@
   --color-filter-bg: hsl(180, 31%, 95%);
   --color-darkCyan: hsl(180, 8%, 52%);
 }
+
+@layer components {
+  .job-card {
+    @apply bg-white p-4 rounded-xl shadow-xl md:p-8 flex flex-col md:flex-row gap-4 md:gap-10 md:justify-between md:items-center;
+  }
+
+  .featured {
+    @apply border-l-[5px] border-l-primary;
+  }
+
+  .filter-tag {
+    @apply flex items-center rounded-lg overflow-hidden;
+  }
+}
