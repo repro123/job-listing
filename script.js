@@ -118,7 +118,7 @@ function updateSearchBar() {
     filterTag.className = "filter-tag";
     filterTag.innerHTML = `
       <span class="text-primary bg-filter-bg font-bold  w-fit p-2 md:text-xl grid place-items-center">${filter}</span>
-      <button class="remove-filter text-white text-4xl bg-primary border-0 outline-0 grid items-center md:text-6xl cursor-pointer hover:bg-headings md:h-12 h-10 w-12" data-filter="${filter}">×</button>
+      <button class="remove-filter text-white text-4xl bg-primary border-0 outline-0 grid place-items-center px-2 pt-1 md:pt-0 md:text-6xl cursor-pointer hover:bg-headings md:h-12 h-10 w-10 md:w-12" data-filter="${filter}">×</button>
     `;
     filtersContainer.appendChild(filterTag);
   });
