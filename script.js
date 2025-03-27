@@ -34,12 +34,12 @@ function createJobElement(job) {
                   <h2 class="text-primary font-bold text-xl">${job.company}</h2>
                   ${
                     job.new
-                      ? '<span class="ml-2 bg-primary rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase">New!</span>'
+                      ? '<span class="ml-2 bg-primary rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase animate-pulse">New!</span>'
                       : ""
                   }
                   ${
                     job.featured
-                      ? '<span class="bg-headings rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase">Featured</span>'
+                      ? '<span class="bg-headings rounded-2xl px-2 py-1 grid place-items-center font-bold text-white pt-2 tracking-wider uppercase animate-pulse">Featured</span>'
                       : ""
                   }
                 </div>
