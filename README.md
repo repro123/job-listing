@@ -129,7 +129,7 @@ job-listings/
 
 Accessibility was a key consideration in this project. Key accessibility features include:
 
-- **Semantic HTML:** Proper use of HTML5 elements such as <header>, <main>, <footer>, and <h1> for improved screen reader navigation.
+- **Semantic HTML:** Proper use of HTML5 elements such as `<header>`, `<main>`, `<footer>`, and `<h1>` for improved screen reader navigation.
 
 - **Screen Reader Support:** The main heading is visually hidden using the sr-only class but is available to screen readers.
 
